@@ -5,10 +5,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int row = 0, col = 0;
+        int row = 0;
+        int col = 0;
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
 
                 int x = sc.nextInt();
 
@@ -19,6 +20,8 @@ public class Main {
             }
         }
 
-        System.out.println(Math.abs(row - 2) + Math.abs(col - 2));
+        int moves = Math.abs(row - 3) + Math.abs(col - 3);
+
+        System.out.println(moves);
     }
 }
